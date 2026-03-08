@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Listening</title>
+  
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f4f8;
+      text-align: center;
+      padding: 40px;
+    }
+    
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    audio {
+      margin-top: 30px;
+      width: 300px;
+    }
+  </style>
+  
+</head>
+
+<body>
+  
+  <h1>Listening Exercises</h1>
+  
+  <button onclick="playAudio('unit1.mp3')">Unit 1</button>
+  <button onclick="playAudio('unit2.mp3')">Unit 2</button>
+  <button onclick="playAudio('unit3.mp3')">Unit 3</button>
+  
+  <audio id="player" controls></audio>
+  
+  <script>
+    function playAudio(file){
+document.getElementById("player").src = "audio/" + file;
+}
+  </script>
+  
+</body>
+
+</html>
